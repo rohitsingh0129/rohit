@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rohit electronic</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function showPage(pageId) {
+            let pages = document.querySelectorAll(".page");
+            pages.forEach(page => page.style.display = "none");
+            document.getElementById(pageId).style.display = "block";
+        }
+    </script>
+    <style><!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>ElectroShop</title>
+            <link rel="stylesheet" href="styles.css">
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #f4f4f4;
+                }
+                header {
+                    background-color: #333;
+                    color: white;
+                    padding: 15px;
+                    text-align: center;
+                }
+                nav ul {
+                    list-style-type: none;
+                    padding: 0;
+                }
+                nav ul li {
+                    display: inline;
+                    margin: 0 15px;
+                }
+                nav ul li a {
+                    color: white;
+                    text-decoration: none;
+                    &:hover{color: darkorange;}
+                }
+                .products {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 20px;
+                    padding: 20px;
+                }
+                .product {
+                    background: white;
+                    padding: 15px;
+                    border-radius: 8px;
+                    text-align: center;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                }
+                .product img {
+                    width: 150px;
+                    height: auto;
+                    border-radius: 5px;
+                }
+                .page {
+                    display: none;
+                    padding: 20px;
+                    text-align: center;
+                }
+                button {
+                    background-color: #28a745;
+                    color: white;
+                    padding: 10px 20px;
+                    border: none;
+                    cursor: pointer;
+                    border-radius: 5px;
+                }
+                button:hover {
+                    background-color: #218838;
+                    
+                }
+                .product:hover
+                {
+                    transform: scale(1.3);
+                    z-index: 2;
+                }
+                </style>
+</head>
+<body onload="showPage('home')">
+    <header>
+        <h1>ROHIT-ELECTRONICS</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('order')">Order</a></li>
+                <li><a href="#" onclick="showPage('cart')">Cart</a></li>
+                <li><a href="#" onclick="showPage('about')">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    
+    
+    <main>
+        <section id="home" class="page">
+            <h2>Special Offers</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW-3VzbalX2oP46PVdqkhvx2QWLHNPAeCung&s"
+alt="laptop" >                   <p>Laptop - &#8377;29999</p>
+                </div>
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGvu2SYXUWfjJRBKeWLB6EGzPBb_bXyAShKg&s" alt="Smartphone">
+                    <p>Smartphone - &#8377;11999</p>
+                </div>
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5qqM8Y-wAiO8YFYL256xLNW4qqfI8seBK7g&s" alt="Headphones">
+                    <p>Headphones -&#8377;1399</p>
+                </div>
+            </div>
+            <div> <div><footer style="background-color: #222; color: white; text-align: center; padding: 20px;">
+                <p>Connect with us:</p>
+                <a href="https://wa.me/your-number" target="_blank">
+                    <img src="https://img.icons8.com/ios-filled/30/ffffff/whatsapp.png" alt="WhatsApp">
+                </a>
+                <a href="https://facebook.com/yourpage" target="_blank">
+                    <img src="https://img.icons8.com/ios-filled/30/ffffff/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://twitter.com/yourhandle" target="_blank">
+                    <img src="https://img.icons8.com/ios-filled/30/ffffff/twitter.png" alt="Twitter">
+                </a>
+                <p>&copy;2025 ROHIT ELECTRONICS. All Rights Reserved. SINCE 2007</p>
+            </footer></div>
+            </div>
+        </section>
+       
+<div>
+        <section id="order" class="page">
+            <h2>Order Products</h2>
+            <div class="products">
+                <div class="product"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7fLjjwg8NYS056I1Y5I71VO2O-x7zCNRWJQ&s" alt="Product 1"><p>Product 1 - &#8377;999</p></div>
+                <div class="product"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1hthDkcLT5oGWplSdxEBRRPH2DwUC7Ed28w&s" alt="Product 2"><p>Product 2 - &#8377;2899</p></div>
+                <div class="product"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOB66v4dnk-bLXI44HRvOqCoJmR7apRk4Gjw&s" alt="Product 3"><p>Product 3 - &#8377;649</p></div>
+                <div class="product"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEydDjJn7BbH8mmz6GR0lmRxqm2fYDKJUw7A&s" alt="Product 4"><p>Product 4 - &#8377;899</p></div>
+                <div class="product"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT89zYlnYq36fVnIw3VL61CKweB35ppRopMQ&s" alt="Product 5"><p>Product 5 - &#8377;1999</p></div>
+                <div class="product"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC67vyFZEBQN_h0n9cdFxSmq7jo3Uj26uulw&s" alt="Product 6"><p>Product 6 - &#8377;2999</p></div>
+                <div class="product"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_ZlsXWQEm7t2VTVVcRFr5UG3X6U8E-a5k9A&s" alt="Product 7"><p>Product 7 - &#8377;57999</p></div>
+                <div class="product"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGvu2SYXUWfjJRBKeWLB6EGzPBb_bXyAShKg&s" alt="Product 8"><p>Product 8 - &#8377;11999</p></div>
+                <div class="product"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ8edov4NFqUjjzn-JCJ6gsYOmcHARS2OfpA&s" alt="Product 9"><p>Product 9 - &#8377;1399</p></div>
+                
+            </div>
+            <div><footer style="background-color: #222; color: white; text-align: center; padding: 20px;">
+                <p>Connect with us:</p>
+                <a href="https://wa.me/your-number" target="_blank">
+                    <img src="https://img.icons8.com/ios-filled/30/ffffff/whatsapp.png" alt="WhatsApp">
+                </a>
+                <a href="https://facebook.com/yourpage" target="_blank">
+                    <img src="https://img.icons8.com/ios-filled/30/ffffff/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://twitter.com/yourhandle" target="_blank">
+                    <img src="https://img.icons8.com/ios-filled/30/ffffff/twitter.png" alt="Twitter">
+                </a>
+                <p>&copy; 2025 ROHIT ELECTRONICS. All Rights Reserved. SINCE 2007</p>
+            </footer></div>
+            
+        </section>
+
+        <section id="cart" class="page">
+            <h2>Your Cart</h2>
+            <p>No items in the cart.</p>
+            <button>Order Now</button>
+        </section>
+
+        <section id="about" class="page">
+            <h1>About Us</h1>
+            <p><h2>WELCOME TO ROHIT ELECTRONICS <BR>
+                <hr>
+                Wide Range of Products: From the latest gadgets to essential accessories, e-commerce electronic shops typically have a vast inventory of items.
+
+                User Reviews and Ratings: Most online shops feature customer reviews and ratings, helping you make informed decisions about the products you’re interested in.
+                
+                Detailed Product Information: You can find detailed descriptions, specifications, and images of the products, which helps you compare different items before making a purchase.
+                
+                Discounts and Offers: Online electronic shops often provide various discounts, deals, and offers that you might not find in physical stores.
+                
+                Delivery and Shipping Options: You can have your purchased items delivered to your doorstep, sometimes with options for express or same-day delivery.
+
+</h2>
+            </p>
+        </section>
+        </div>
+    </main>
+</body>
+</html>
